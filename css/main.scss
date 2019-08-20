@@ -1,0 +1,36 @@
+body {
+    background: #000;
+    h1{
+        font-family: 'Lato', 'Sans-Serif';
+        color: white;
+    }
+    margin: 0;
+}
+
+#earth-svg{
+    height: 128px;
+}
+
+#wrapper{
+    display: table;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+#div-principal{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-nav {
+    width: 100%;
+    background-color: #1d1d1d;
+    position: fixed;
+    p{
+        margin-left: 5%;
+        vertical-align: middle;
+        color: white;
+        font-family: 'Lato', 'Sans-Serif';
+    }
+}
