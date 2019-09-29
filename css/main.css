@@ -3,12 +3,7 @@ body {
   margin: 0;
 }
 
-body h1 {
-  font-family: 'Lato', 'Sans-Serif';
-  color: white;
-}
-
-#earth-svg {
+#main-svg {
   height: 128px;
 }
 
@@ -24,16 +19,69 @@ body h1 {
   vertical-align: middle;
 }
 
-.main-nav {
-  width: 100%;
-  background-color: #1d1d1d;
-  position: fixed;
+#git-link {
+  text-decoration: none;
 }
 
-.main-nav p {
-  margin-left: 5%;
+#git-link p {
+  background: #212121;
+  display: inline-block;
   vertical-align: middle;
+}
+
+#GH-logo {
+  margin-left: 5%;
+  height: 26px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+#giphy-logo {
+  height: 32px;
+}
+
+#btn-new-gif {
+  background: #212121;
+  border: none;
   color: white;
-  font-family: 'Lato', 'Sans-Serif';
+  font-weight: bold;
+  font-family: "Lato", "Sans-Serif";
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#btn-new-gif p {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+}
+
+#btn-new-gif:hover {
+  background: #333333;
+}
+
+#gif-div {
+  height: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.default-font {
+  font-family: "Lato", "Sans-Serif";
+}
+
+.white-font {
+  color: white;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: #212121;
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */

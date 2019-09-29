@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>luizf-lf - Portifolio</title>
 </head>
+<!-- Twilight is the best pone -->
 <body>
     <nav class="main-nav">
-        <p>luizf-lf</p>
+        <a class="default-font white-font" id="git-link" href="https://github.com/luizf-lf/" target="_blank">
+            <img src="../img/GitHub-Mark-Light-64px.png" alt="GitHub" id="GH-logo"><p>luizf-lf</p>
+        </a>        
     </nav>
     <div id="wrapper">
         <div id="div-principal">
-            <img src="../img/earth.svg" id="earth-svg">
-            <h1>This planet is under construction.</h1>
+            <img src="../img/crane.svg" id="main-svg">
+            <h1 class="default-font white-font">This site is under construction.</h1>
+            <p class="default-font white-font">In the meantime, enjoy procrastinating by viewing this gif:</p>
+            <a id="link-div" href="#" target="_blank">
+                <div id="gif-div"></div>
+            </a>
+            <a href="https://www.giphy.com" target="_blank"> 
+                <img src="../img/giphy-logo.gif" id="giphy-logo" alt="Giphy Logo">
+            </a>
+            <br>
+            <button id="btn-new-gif"><p>Show me another</p></button>
+        </div>
     </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/get-gif.js"></script>
 </body>
 </html>
