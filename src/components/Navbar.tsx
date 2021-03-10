@@ -57,7 +57,11 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbarContainer}>
-        <Link to="/" className={styles.navbarLogo}>
+        <Link
+          to="/"
+          className={styles.navbarLogo}
+          onClick={() => setLateralNavIsVisible(false)}
+        >
           <img src={navbarLogo} alt="luizf-lf" />
           <p>luizf-lf</p>
         </Link>
