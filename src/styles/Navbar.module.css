@@ -1,5 +1,5 @@
 .navbarContainer {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
   font-size: 1.2rem;
 }
 
-.navbarLinksContainer a {
+.navbarLinksLink {
   margin-left: 6rem;
   text-decoration: none;
   color: #fff;
@@ -30,9 +30,93 @@
   align-items: center;
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.navbarLinksContainer a > img {
+.navbarLinksLink img {
   margin-right: 1rem;
   height: 26px;
+}
+
+.navbarLinksLink > img {
+  display: none;
+}
+
+.navbarLinksLink > div {
+  display: flex;
+}
+
+.navbarMenuToggle {
+  background: none;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.lateralNavbar {
+  display: none;
+}
+
+.navbarCloseButton {
+  background: #383838;
+  border-radius: 1rem;
+  border: 0;
+  padding: 1rem;
+  display: none;
+}
+
+.navbarCloseButton img {
+  height: 20px;
+}
+
+.lateralNavVisible {
+  transform: translateX(80vw);
+}
+
+@media screen and (max-width: 900px) {
+  .navbarLogo p {
+    display: none;
+  }
+
+  .navbarMenuToggle {
+    display: inline;
+  }
+
+  .navbarLinksContainer {
+    display: none;
+  }
+
+  .lateralNavbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 80vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #444444;
+    padding: 1rem;
+    align-items: flex-end;
+    transition: 500ms;
+    animation: ease-in-out;
+  }
+
+  .lateralNavbar a {
+    display: block;
+    background: #383838;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .navbarLinksLink > img {
+    display: inline;
+  }
+
+  .navbarCloseButton {
+    display: inline;
+  }
 }
