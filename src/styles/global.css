@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,10 @@
 }
 
 body {
+  background: #444444;
   background: linear-gradient(107.56deg, #444444 0%, #121214 64.06%);
+  height: 100vh;
   color: #fff;
+  font-family: Montserrat, 'sans-serif';
+  font-size: 16px;
 }
