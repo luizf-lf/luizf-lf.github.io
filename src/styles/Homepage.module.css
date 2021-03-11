@@ -1,0 +1,66 @@
+.homepageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 88vh;
+}
+
+.presentationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentationText {
+  font-size: 4.5rem;
+  max-width: 48%;
+}
+
+.presentationAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.presentationAbout h1 {
+  font-size: 4rem;
+}
+
+.presentationAbout p {
+  font-size: 2rem;
+}
+
+.footerButton {
+  width: 15rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  font-family: Poppins, 'sans-serif';
+  font-weight: medium;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+.footerButtonSvg {
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: 200ms;
+}
+
+.footerButton:hover {
+  background: #fff;
+  color: #444444;
+  width: 18rem;
+}
+
+.footerButton:hover .footerButtonSvg {
+  filter: invert(0.8);
+}
