@@ -13,7 +13,7 @@
 
 .navbarLogo img {
   height: 36px;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 .navbarLogo p {
@@ -22,7 +22,7 @@
 }
 
 .navbarLinksLink {
-  margin-left: 6rem;
+  margin-left: 8rem;
   text-decoration: none;
   color: #fff;
   font-family: Poppins, 'sans-serif';
