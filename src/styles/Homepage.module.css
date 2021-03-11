@@ -34,6 +34,22 @@
   transition: 200ms;
 }
 
+.presentationStack {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.presentationStack:hover img {
+  margin-left: none;
+}
+
+.presentationStack img {
+  height: 4rem;
+  margin-left: -1rem;
+
+  transition: 200ms;
+}
+
 .footerButton {
   width: 15rem;
   background: transparent;
@@ -106,6 +122,10 @@
 
   .presentationAbout p {
     font-size: 1rem;
+  }
+
+  .presentationStack img {
+    height: 2.5rem;
   }
 
   .footerButton {
