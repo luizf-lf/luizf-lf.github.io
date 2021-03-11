@@ -25,6 +25,8 @@ function Navbar() {
       </button>
       <a
         href="https://www.linkedin.com/in/luizf-lf/"
+        target="_blank"
+        rel="noreferrer"
         className={styles.navbarLinksLink}
       >
         <div>
@@ -33,7 +35,12 @@ function Navbar() {
         </div>
         <img src={rightArrow} alt="Right Arrow" />
       </a>
-      <a href="https://github.com/luizf-lf/" className={styles.navbarLinksLink}>
+      <a
+        href="https://github.com/luizf-lf/"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.navbarLinksLink}
+      >
         <div>
           <img src={github} alt="Github" />
           <span>Github</span>
