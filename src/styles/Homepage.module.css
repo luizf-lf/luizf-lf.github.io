@@ -13,8 +13,9 @@
 }
 
 .presentationText {
-  font-size: 4.5rem;
-  max-width: 48%;
+  font-size: 4rem;
+  width: 45%;
+  transition: 400ms;
 }
 
 .presentationAbout {
@@ -25,10 +26,12 @@
 
 .presentationAbout h1 {
   font-size: 4rem;
+  transition: 200ms;
 }
 
 .presentationAbout p {
   font-size: 2rem;
+  transition: 200ms;
 }
 
 .footerButton {
@@ -65,4 +68,52 @@
 
 .footerButton:hover .footerButtonSvg {
   filter: invert(0.8);
+}
+
+@media screen and (max-width: 1100px) {
+  .presentationText {
+    font-size: 3rem;
+  }
+
+  .presentationAbout h1 {
+    font-size: 3rem;
+  }
+
+  .presentationAbout p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .presentationContainer {
+    flex-direction: column;
+  }
+
+  .presentationText {
+    margin-top: -4rem;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .presentationAbout {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .presentationAbout h1 {
+    font-size: 2rem;
+  }
+
+  .presentationAbout p {
+    font-size: 1rem;
+  }
+
+  .footerButton {
+    font-size: 1rem;
+    width: fit-content;
+  }
+
+  .footerButton:hover {
+    width: fit-content;
+  }
 }
