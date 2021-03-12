@@ -9,7 +9,7 @@ import hamburgerMenu from '../assets/hamburger-menu.svg';
 import rightArrow from '../assets/right-arrow.svg';
 import closeIcon from '../assets/close.svg';
 
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/components/Navbar.module.css';
 
 function Navbar() {
   const [lateralNavIsVisible, setLateralNavIsVisible] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/Homepage.module.css';
+import styles from '../styles/pages/Homepage.module.css';
 
 import { ReactComponent as MailIcon } from '../assets/mail.svg';
 
