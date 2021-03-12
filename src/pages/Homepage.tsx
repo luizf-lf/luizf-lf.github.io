@@ -28,15 +28,17 @@ function Homepage() {
           <p>Full Stack Web Developer</p>
           <p>Minas Gerais, Brasil</p>
           <div className={styles.presentationStack}>
-            <img src={protheusIcon} alt="Microsiga Protheus" />
-            <img src={sqlServerStackIcon} alt="SQL Server" />
-            <img src={gitStackIcon} alt="Git" />
-            <img src={sassStackIcon} alt="Sass" />
-            <img src={nodejsStackIcon} alt="Node" />
-            <img src={nextStackIcon} alt="Next" />
-            <img src={reactStackIcon} alt="React" />
-            <img src={javascriptStackIcon} alt="Javascript" />
-            <img src={typescriptStackIcon} alt="Typescript" />
+            <div className={styles.stackIconsContainer}>
+              <img src={protheusIcon} alt="Microsiga Protheus" />
+              <img src={sqlServerStackIcon} alt="SQL Server" />
+              <img src={gitStackIcon} alt="Git" />
+              <img src={sassStackIcon} alt="Sass" />
+              <img src={nodejsStackIcon} alt="Node" />
+              <img src={nextStackIcon} alt="Next" />
+              <img src={reactStackIcon} alt="React" />
+              <img src={javascriptStackIcon} alt="Javascript" />
+              <img src={typescriptStackIcon} alt="Typescript" />
+            </div>
           </div>
         </div>
       </div>
