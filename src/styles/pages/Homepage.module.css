@@ -38,7 +38,7 @@
   border: 2px solid rgba(0, 0, 0, 0);
 
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 1rem;
   cursor: pointer;
   transition: 200ms;
@@ -46,6 +46,7 @@
 
 .presentationStack:hover {
   border: 2px solid #444444;
+  padding: 1rem;
 }
 
 .presentationStack:hover > .stackIconsContainer img {
@@ -145,5 +146,9 @@
 
   .footerButton:hover {
     width: fit-content;
+  }
+
+  .presentationStack:hover > .stackIconsContainer img {
+    margin-left: -0.5rem;
   }
 }
