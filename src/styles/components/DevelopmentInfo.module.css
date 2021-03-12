@@ -1,0 +1,35 @@
+.devInfoContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+
+  border: 2px solid #f29c1f;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #444444;
+  display: flex;
+  align-items: center;
+  transition: 200ms;
+  opacity: 50%;
+}
+
+.devInfoContainer img {
+  height: 1.5rem;
+}
+
+.devInfoContainer span {
+  font-size: 1rem;
+  font-size: 0px;
+  transition: 200ms;
+}
+
+.devInfoContainer:hover {
+  opacity: 100%;
+}
+
+.devInfoContainer:hover span {
+  font-size: 1rem;
+
+  margin-left: 1rem;
+}
