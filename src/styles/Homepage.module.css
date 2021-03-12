@@ -40,12 +40,13 @@
 }
 
 .presentationStack:hover img {
-  margin-left: none;
+  margin-left: 0.5rem;
 }
 
 .presentationStack img {
-  height: 4rem;
+  height: 3.5rem;
   margin-left: -1rem;
+  box-shadow: -6px 0px 15px 0px rgba(0, 0, 0, 0.3);
 
   transition: 200ms;
 }

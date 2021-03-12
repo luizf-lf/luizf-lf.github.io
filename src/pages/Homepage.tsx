@@ -28,7 +28,7 @@ function Homepage() {
           <p>Full Stack Web Developer</p>
           <p>Minas Gerais, Brasil</p>
           <div className={styles.presentationStack}>
-            {/* <img src={protheusIcon} alt="Microsiga Protheus" /> */}
+            <img src={protheusIcon} alt="Microsiga Protheus" />
             <img src={sqlServerStackIcon} alt="SQL Server" />
             <img src={gitStackIcon} alt="Git" />
             <img src={sassStackIcon} alt="Sass" />
