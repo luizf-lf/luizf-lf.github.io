@@ -82,7 +82,7 @@
 }
 
 .navbarCloseButton {
-  background: #383838;
+  background: #444;
   border-radius: 1rem;
   border: 0;
   padding: 1rem;
@@ -125,7 +125,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: #444444;
+    background: #222;
     padding: 1rem;
     align-items: flex-end;
 
@@ -134,7 +134,7 @@
 
   .lateralNavbar a {
     display: block;
-    background: #383838;
+    background: #333;
     border-radius: 1rem;
     margin: 0;
     padding: 1rem;

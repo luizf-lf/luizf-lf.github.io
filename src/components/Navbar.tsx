@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import navbarLogo from '../assets/navbar-logo.svg';
-import linkedInIcon from '../assets/linkedIn.svg';
-import github from '../assets/github.svg';
-import rocket from '../assets/rocket.svg';
-import hamburgerMenu from '../assets/hamburger-menu.svg';
-import rightArrow from '../assets/right-arrow.svg';
-import closeIcon from '../assets/close.svg';
+import navbarLogo from '../assets/icons/navbar-logo.svg';
+import linkedInIcon from '../assets/icons/linkedIn.svg';
+import github from '../assets/icons/github.svg';
+import rocket from '../assets/icons/rocket.svg';
+import hamburgerMenu from '../assets/icons/hamburger-menu.svg';
+import rightArrow from '../assets/icons/right-arrow.svg';
+import closeIcon from '../assets/icons/close.svg';
 
 import styles from '../styles/components/Navbar.module.css';
 

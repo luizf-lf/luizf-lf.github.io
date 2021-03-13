@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../styles/components/DevelopmentInfo.module.css';
 
-import warningIcon from '../assets/warning.svg';
+import warningIcon from '../assets/icons/warning.svg';
 
 function DevelopmentInfo() {
   return (

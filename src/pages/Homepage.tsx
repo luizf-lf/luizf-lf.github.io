@@ -2,17 +2,17 @@ import React from 'react';
 
 import styles from '../styles/pages/Homepage.module.css';
 
-import { ReactComponent as MailIcon } from '../assets/mail.svg';
+import { ReactComponent as MailIcon } from '../assets/icons/mail.svg';
 
-import gitStackIcon from '../assets/stack/git.svg';
-import javascriptStackIcon from '../assets/stack/javascript.svg';
-import nextStackIcon from '../assets/stack/next.svg';
-import nodejsStackIcon from '../assets/stack/nodejs.svg';
-import reactStackIcon from '../assets/stack/react.svg';
-import sassStackIcon from '../assets/stack/sass.svg';
-import sqlServerStackIcon from '../assets/stack/sql-server.svg';
-import typescriptStackIcon from '../assets/stack/typescript.svg';
-import protheusIcon from '../assets/stack/protheus.svg';
+import gitStackIcon from '../assets/icons/stack/git.svg';
+import javascriptStackIcon from '../assets/icons/stack/javascript.svg';
+import nextStackIcon from '../assets/icons/stack/next.svg';
+import nodejsStackIcon from '../assets/icons/stack/nodejs.svg';
+import reactStackIcon from '../assets/icons/stack/react.svg';
+import sassStackIcon from '../assets/icons/stack/sass.svg';
+import sqlServerStackIcon from '../assets/icons/stack/sql-server.svg';
+import typescriptStackIcon from '../assets/icons/stack/typescript.svg';
+import protheusIcon from '../assets/icons/stack/protheus.svg';
 
 function Homepage() {
   return (
