@@ -14,6 +14,8 @@ import sqlServerStackIcon from '../assets/icons/stack/sql-server.svg';
 import typescriptStackIcon from '../assets/icons/stack/typescript.svg';
 import protheusIcon from '../assets/icons/stack/protheus.svg';
 
+import downIcon from '../assets/icons/down.svg';
+
 function Homepage() {
   return (
     <>
@@ -40,6 +42,10 @@ function Homepage() {
                 <img src={javascriptStackIcon} alt="Javascript" />
                 <img src={typescriptStackIcon} alt="Typescript" />
               </div>
+              <span>
+                Conheça a minha stack
+                <img src={downIcon} alt="Down" />
+              </span>
             </div>
           </div>
         </div>
