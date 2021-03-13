@@ -16,37 +16,40 @@ import protheusIcon from '../assets/stack/protheus.svg';
 
 function Homepage() {
   return (
-    <div className={styles.homepageContainer}>
-      <p></p>
-      <div className={styles.presentationContainer}>
-        <div className={styles.presentationText}>
-          <strong>Desenvolvendo um novo mundo.</strong>
-          <p>Uma linha de código por vez.</p>
-        </div>
-        <div className={styles.presentationAbout}>
-          <h1>Luiz Fernando</h1>
-          <p>Full Stack Web Developer</p>
-          <p>Minas Gerais, Brasil</p>
-          <div className={styles.presentationStack}>
-            <div className={styles.stackIconsContainer}>
-              <img src={protheusIcon} alt="Microsiga Protheus" />
-              <img src={sqlServerStackIcon} alt="SQL Server" />
-              <img src={gitStackIcon} alt="Git" />
-              <img src={sassStackIcon} alt="Sass" />
-              <img src={nodejsStackIcon} alt="Node" />
-              <img src={nextStackIcon} alt="Next" />
-              <img src={reactStackIcon} alt="React" />
-              <img src={javascriptStackIcon} alt="Javascript" />
-              <img src={typescriptStackIcon} alt="Typescript" />
+    <>
+      <div className={styles.homepageContainer}>
+        <p></p>
+        <div className={styles.presentationContainer}>
+          <div className={styles.presentationText}>
+            <strong>Desenvolvendo um novo mundo.</strong>
+            <p>Uma linha de código por vez.</p>
+          </div>
+          <div className={styles.presentationAbout}>
+            <h1>Luiz Fernando</h1>
+            <p>Full Stack Web Developer</p>
+            <p>Minas Gerais, Brasil</p>
+            <div className={styles.presentationStack}>
+              <div className={styles.stackIconsContainer}>
+                <img src={protheusIcon} alt="Microsiga Protheus" />
+                <img src={sqlServerStackIcon} alt="SQL Server" />
+                <img src={gitStackIcon} alt="Git" />
+                <img src={sassStackIcon} alt="Sass" />
+                <img src={nodejsStackIcon} alt="Node" />
+                <img src={nextStackIcon} alt="Next" />
+                <img src={reactStackIcon} alt="React" />
+                <img src={javascriptStackIcon} alt="Javascript" />
+                <img src={typescriptStackIcon} alt="Typescript" />
+              </div>
             </div>
           </div>
         </div>
+        <button type="button" className={styles.footerButton}>
+          <MailIcon className={styles.footerButtonSvg} />
+          Entre em contato
+        </button>
       </div>
-      <button type="button" className={styles.footerButton}>
-        <MailIcon className={styles.footerButtonSvg} />
-        Entre em contato
-      </button>
-    </div>
+      <div></div>
+    </>
   );
 }
 

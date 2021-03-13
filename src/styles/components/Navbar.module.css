@@ -3,17 +3,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navbarLogo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 1rem;
 }
 
 .navbarLogo img {
   height: 36px;
   margin-right: 2rem;
+  transition: 200ms;
 }
 
 .navbarLogo p {
@@ -69,6 +77,8 @@
 
 .lateralNavbar {
   display: none;
+  transition: 400ms;
+  animation: ease-in-out;
 }
 
 .navbarCloseButton {
@@ -118,8 +128,8 @@
     background: #444444;
     padding: 1rem;
     align-items: flex-end;
-    transition: 500ms;
-    animation: ease-in-out;
+
+    box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
   .lateralNavbar a {

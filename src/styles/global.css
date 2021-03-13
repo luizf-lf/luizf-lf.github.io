@@ -8,22 +8,12 @@
 
 body {
   background: #444444;
-  background: linear-gradient(107.56deg, #444444 0%, #121214 64.06%);
-  height: 100vh;
   color: #fff;
   font-family: Montserrat, 'sans-serif';
   font-size: 16px;
-
-  padding: 0 4rem;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-}
-
-@media screen and (max-width: 540px) {
-  body {
-    padding: 0 1.5rem;
-  }
 }
