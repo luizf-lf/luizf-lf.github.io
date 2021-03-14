@@ -1,8 +1,7 @@
 import React from 'react';
+import { FaDatabase, FaMobile, FaServer, FaTools } from 'react-icons/fa';
 
 import styles from '../styles/pages/Homepage.module.css';
-
-import { ReactComponent as MailIcon } from '../assets/icons/mail.svg';
 
 import gitStackIcon from '../assets/icons/stack/git.svg';
 import javascriptStackIcon from '../assets/icons/stack/javascript.svg';
@@ -13,8 +12,11 @@ import sassStackIcon from '../assets/icons/stack/sass.svg';
 import sqlServerStackIcon from '../assets/icons/stack/sql-server.svg';
 import typescriptStackIcon from '../assets/icons/stack/typescript.svg';
 import protheusIcon from '../assets/icons/stack/protheus.svg';
+import mailIcon from '../assets/icons/mail.svg';
+import simpleJsIcon from '../assets/icons/simple/javascript-simple.svg';
 
 import downIcon from '../assets/icons/down.svg';
+import StackItem from '../components/StackItem';
 
 function Homepage() {
   return (
@@ -50,11 +52,44 @@ function Homepage() {
           </div>
         </div>
         <button type="button" className={styles.footerButton}>
-          <MailIcon className={styles.footerButtonSvg} />
+          <img src={mailIcon} alt="Mail" className={styles.footerButtonImg} />
           Entre em contato
         </button>
       </div>
-      <div></div>
+      <div className={styles.stackDetailsContainer}>
+        <p className={styles.stackDetailsTitle}>
+          Com o que estou trabalhando atualmente:
+        </p>
+        <div className={styles.stackDetailsCardsContainer}>
+          <div className={styles.stackDetailsCard}>
+            <div className={styles.detailsCardTitle}>
+              <FaMobile />
+              <span>Front-end</span>
+            </div>
+            <div>
+              <StackItem name="Javascript" level={8} icon={simpleJsIcon} />
+            </div>
+          </div>
+          <div className={styles.stackDetailsCard}>
+            <div className={styles.detailsCardTitle}>
+              <FaServer />
+              <span>Back-end</span>
+            </div>
+          </div>
+          <div className={styles.stackDetailsCard}>
+            <div className={styles.detailsCardTitle}>
+              <FaDatabase />
+              <span>Banco de dados</span>
+            </div>
+          </div>
+          <div className={styles.stackDetailsCard}>
+            <div className={styles.detailsCardTitle}>
+              <FaTools />
+              <span>Ferramentas e Frameworks</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

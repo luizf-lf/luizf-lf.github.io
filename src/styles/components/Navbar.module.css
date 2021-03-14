@@ -27,6 +27,12 @@
 .navbarLogo p {
   font-family: Poppins, 'sans-serif';
   font-size: 1.2rem;
+  opacity: 0%;
+  transition: 200ms;
+}
+
+.navbarLogo:hover p {
+  opacity: 100%;
 }
 
 .navbarLinksLink {
