@@ -13,6 +13,17 @@ import styles from '../styles/components/Navbar.module.css';
 
 function Navbar() {
   const [lateralNavIsVisible, setLateralNavIsVisible] = useState(false);
+  const [navbarScrolled, setNavbarScrolled] = useState(false);
+
+  const changeNavbarBackground = () => {
+    if (window.scrollY > 40) {
+      setNavbarScrolled(true);
+    } else {
+      setNavbarScrolled(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeNavbarBackground);
 
   const links = (
     <>
@@ -63,7 +74,13 @@ function Navbar() {
 
   return (
     <>
-      <nav className={styles.navbarContainer}>
+      <nav
+        className={
+          navbarScrolled
+            ? `${styles.navbarContainer} ${styles.navbarContainerScrolled}`
+            : styles.navbarContainer
+        }
+      >
         <Link
           to="/"
           className={styles.navbarLogo}

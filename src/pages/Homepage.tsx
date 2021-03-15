@@ -44,6 +44,7 @@ function Homepage() {
       duration: 800,
       delay: 0,
       smooth: 'easeInOut',
+      offset: -90,
     });
   };
   return (

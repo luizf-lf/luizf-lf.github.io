@@ -6,6 +6,12 @@
   position: fixed;
   width: 100vw;
   padding: 1rem 2rem;
+  background: transparent;
+  box-shadow: none;
+  transition: 200ms;
+}
+
+.navbarContainerScrolled {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
