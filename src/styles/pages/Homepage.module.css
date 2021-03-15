@@ -136,7 +136,7 @@
 }
 
 .stackDetailsCard {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   background: #444444;
   border-radius: 1rem;
@@ -160,6 +160,10 @@
 
 .detailsCardTitle span {
   font-size: 1.5rem;
+}
+
+.detailsCardBody > div {
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -226,5 +230,9 @@
 
   .stackDetailsCardsContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stackDetailsCard {
+    min-height: fit-content;
   }
 }
