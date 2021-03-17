@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import styles from '../styles/components/StackItem.module.css';
 
@@ -9,6 +10,7 @@ interface stackItemProps {
 }
 
 const StackItem = ({ name, level, icon }: stackItemProps) => {
+  const { t } = useTranslation();
   let levelWidth = level * 10;
   let color;
 
@@ -34,7 +36,7 @@ const StackItem = ({ name, level, icon }: stackItemProps) => {
       </div>
       <div className={styles.stackContent}>
         <p className={styles.stackName}>{name}</p>
-        <p className={styles.stackLevelTitle}>Nível:</p>
+        <p className={styles.stackLevelTitle}>{t('stackItem.level')}:</p>
         <div className={styles.stackProgressBar}>
           <div
             className={styles.stackActualProgress}

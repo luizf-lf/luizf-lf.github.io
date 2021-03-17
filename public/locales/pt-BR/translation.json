@@ -1,5 +1,8 @@
 {
   "navbar": {
     "projects": "Projetos"
+  },
+  "stackItem": {
+    "level": "Nível"
   }
 }
