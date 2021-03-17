@@ -10,10 +10,13 @@ import rightArrow from '../assets/icons/right-arrow.svg';
 import closeIcon from '../assets/icons/close.svg';
 
 import styles from '../styles/components/Navbar.module.css';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
   const [lateralNavIsVisible, setLateralNavIsVisible] = useState(false);
   const [navbarScrolled, setNavbarScrolled] = useState(false);
+
+  const { t } = useTranslation();
 
   const changeNavbarBackground = () => {
     if (window.scrollY > 40) {
@@ -65,7 +68,7 @@ function Navbar() {
       >
         <div>
           <img src={rocket} alt="Projects" />
-          <span>Projetos</span>
+          <span>{t('navbar.projects')}</span>
         </div>
         <img src={rightArrow} alt="Right Arrow" />
       </Link>

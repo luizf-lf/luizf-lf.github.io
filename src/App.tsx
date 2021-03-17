@@ -5,16 +5,20 @@ import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
 
 import './styles/global.css';
+import './i18n';
+import { Suspense } from 'react';
 
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Route exact path="/" component={Homepage}></Route>
-        <Route path="/projects" component={Projects}></Route>
-      </Router>
-      {/* <DevelopmentInfo /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Router>
+          <Navbar />
+          <Route exact path="/" component={Homepage}></Route>
+          <Route path="/projects" component={Projects}></Route>
+        </Router>
+        {/* <DevelopmentInfo /> */}
+      </Suspense>
     </>
   );
 }
