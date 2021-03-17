@@ -4,5 +4,22 @@
   },
   "stackItem": {
     "level": "Level"
+  },
+  "homepage": {
+    "hero": {
+      "catchPhrase1": "Developing a new world.",
+      "catchPhrase2": "One line of code at a time.",
+      "location": "Minas Gerais, Brazil",
+      "contactButton": "Contact me"
+    },
+    "stack": {
+      "title": "Learn about the stack I'm currently working with:",
+      "database": "Databases",
+      "tools": "Tools and Frameworks"
+    },
+    "contact": {
+      "title": "Come and meet me:",
+      "description": "You can contact me through these networks:"
+    }
   }
 }

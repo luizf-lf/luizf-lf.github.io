@@ -46,8 +46,10 @@ import simpleDockerIcon from '../assets/icons/simple/docker-simple.svg';
 
 // import downIcon from '../assets/icons/down.svg';
 import StackItem from '../components/StackItem';
+import { useTranslation } from 'react-i18next';
 
 function Homepage() {
+  const { t } = useTranslation();
   const scrollToSkills = () => {
     scroller.scrollTo('skillsContainerTarget', {
       duration: 800,
@@ -72,13 +74,13 @@ function Homepage() {
         <p></p>
         <div className={styles.presentationContainer}>
           <div className={styles.presentationText}>
-            <strong>Desenvolvendo um novo mundo.</strong>
-            <p>Uma linha de código por vez.</p>
+            <strong>{t('homepage.hero.catchPhrase1')}</strong>
+            <p>{t('homepage.hero.catchPhrase2')}</p>
           </div>
           <div className={styles.presentationAbout}>
             <h1>Luiz Fernando</h1>
             <p>Full Stack Web Developer</p>
-            <p>Minas Gerais, Brasil</p>
+            <p>{t('homepage.hero.location')}</p>
             <div className={styles.presentationStack} onClick={scrollToSkills}>
               <div className={styles.stackIconsContainer}>
                 <img src={protheusIcon} alt="Microsiga Protheus" />
@@ -104,13 +106,11 @@ function Homepage() {
           onClick={scrollToContact}
         >
           <img src={mailIcon} alt="Mail" className={styles.footerButtonImg} />
-          Entre em contato
+          {t('homepage.hero.contactButton')}
         </button>
       </div>
       <div className={`${styles.stackDetailsContainer} skillsContainerTarget`}>
-        <div className={styles.homepageTitle}>
-          Conheça a stack com a qual estou trabalhando atualmente:
-        </div>
+        <div className={styles.homepageTitle}>{t('homepage.stack.title')}</div>
         <div className={styles.stackDetailsCardsContainer}>
           <div className={styles.stackDetailsCard}>
             <div className={styles.detailsCardTitle}>
@@ -140,7 +140,7 @@ function Homepage() {
           <div className={styles.stackDetailsCard}>
             <div className={styles.detailsCardTitle}>
               <FaDatabase />
-              <span>Banco de dados</span>
+              <span>{t('homepage.stack.database')}</span>
             </div>
             <div className={styles.detailsCardBody}>
               <StackItem
@@ -159,7 +159,7 @@ function Homepage() {
           <div className={styles.stackDetailsCard}>
             <div className={styles.detailsCardTitle}>
               <FaTools />
-              <span>Ferramentas e Frameworks</span>
+              <span>{t('homepage.stack.tools')}</span>
             </div>
             <div className={styles.detailsCardBody}>
               <StackItem name="Git" level={8} icon={simpleGitIcon} />
@@ -171,11 +171,13 @@ function Homepage() {
         </div>
 
         <div className="contactContainerTarget">
-          <div className={styles.homepageTitle}>Entre em contato:</div>
+          <div className={styles.homepageTitle}>
+            {t('homepage.contact.title')}
+          </div>
 
           <div className={styles.contactContainer}>
             <div className={styles.contactTitle}>
-              Você pode entrar em contato comigo através destas redes:
+              {t('homepage.contact.description')}
             </div>
             <div className={styles.contactLinks}>
               <a
