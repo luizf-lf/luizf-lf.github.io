@@ -178,16 +178,32 @@ function Homepage() {
               Você pode entrar em contato comigo através destas redes:
             </div>
             <div className={styles.contactLinks}>
-              <a href="https://github.com/luizf-lf">
+              <a
+                href="https://github.com/luizf-lf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub /> Github
               </a>
-              <a href="https://www.linkedin.com/in/luizf-lf/">
+              <a
+                href="https://www.linkedin.com/in/luizf-lf/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin /> LinkedIn
               </a>
-              <a href="https://discordapp.com/users/553069343160664105">
+              <a
+                href="https://discordapp.com/users/553069343160664105"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaDiscord /> Discord
               </a>
-              <a href="https://join.skype.com/invite/sovOLN4kgQSC">
+              <a
+                href="https://join.skype.com/invite/sovOLN4kgQSC"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaSkype /> Skype
               </a>
             </div>
