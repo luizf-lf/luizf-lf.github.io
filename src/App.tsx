@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import DevelopmentInfo from './components/DevelopmentInfo';
+// import DevelopmentInfo from './components/DevelopmentInfo';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/" component={Homepage}></Route>
         <Route path="/projects" component={Projects}></Route>
       </Router>
-      <DevelopmentInfo />
+      {/* <DevelopmentInfo /> */}
     </>
   );
 }

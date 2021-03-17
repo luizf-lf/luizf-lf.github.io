@@ -1,5 +1,14 @@
 import React from 'react';
-import { FaDatabase, FaMobile, FaServer, FaTools } from 'react-icons/fa';
+import {
+  FaDatabase,
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaMobile,
+  FaServer,
+  FaSkype,
+  FaTools,
+} from 'react-icons/fa';
 
 import { scroller } from 'react-scroll';
 
@@ -35,7 +44,7 @@ import simpleFluigIcon from '../assets/icons/simple/fluig-simple.png';
 import simpleGitIcon from '../assets/icons/simple/git-simple.svg';
 import simpleDockerIcon from '../assets/icons/simple/docker-simple.svg';
 
-import downIcon from '../assets/icons/down.svg';
+// import downIcon from '../assets/icons/down.svg';
 import StackItem from '../components/StackItem';
 
 function Homepage() {
@@ -47,6 +56,16 @@ function Homepage() {
       offset: -90,
     });
   };
+
+  const scrollToContact = () => {
+    scroller.scrollTo('contactContainerTarget', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOut',
+      offset: -90,
+    });
+  };
+
   return (
     <>
       <div className={styles.homepageContainer}>
@@ -72,22 +91,26 @@ function Homepage() {
                 <img src={javascriptStackIcon} alt="Javascript" />
                 <img src={typescriptStackIcon} alt="Typescript" />
               </div>
-              <span>
+              {/* <span className={styles.presentationStackPlaceholder}>
                 Conheça a minha stack
                 <img src={downIcon} alt="Down" />
-              </span>
+              </span> */}
             </div>
           </div>
         </div>
-        <button type="button" className={styles.footerButton}>
+        <button
+          type="button"
+          className={styles.footerButton}
+          onClick={scrollToContact}
+        >
           <img src={mailIcon} alt="Mail" className={styles.footerButtonImg} />
           Entre em contato
         </button>
       </div>
       <div className={`${styles.stackDetailsContainer} skillsContainerTarget`}>
-        <p className={styles.stackDetailsTitle}>
-          Com o que estou trabalhando atualmente:
-        </p>
+        <div className={styles.homepageTitle}>
+          Conheça a stack com a qual estou trabalhando atualmente:
+        </div>
         <div className={styles.stackDetailsCardsContainer}>
           <div className={styles.stackDetailsCard}>
             <div className={styles.detailsCardTitle}>
@@ -143,6 +166,30 @@ function Homepage() {
               <StackItem name="Protheus" level={6} icon={simpleProtheusIcon} />
               <StackItem name="Fluig" level={6} icon={simpleFluigIcon} />
               <StackItem name="Docker" level={3} icon={simpleDockerIcon} />
+            </div>
+          </div>
+        </div>
+
+        <div className="contactContainerTarget">
+          <div className={styles.homepageTitle}>Entre em contato:</div>
+
+          <div className={styles.contactContainer}>
+            <div className={styles.contactTitle}>
+              Você pode entrar em contato comigo através destas redes:
+            </div>
+            <div className={styles.contactLinks}>
+              <a href="https://github.com/luizf-lf">
+                <FaGithub /> Github
+              </a>
+              <a href="https://www.linkedin.com/in/luizf-lf/">
+                <FaLinkedin /> LinkedIn
+              </a>
+              <a href="https://discordapp.com/users/553069343160664105">
+                <FaDiscord /> Discord
+              </a>
+              <a href="https://join.skype.com/invite/sovOLN4kgQSC">
+                <FaSkype /> Skype
+              </a>
             </div>
           </div>
         </div>

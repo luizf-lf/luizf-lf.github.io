@@ -49,19 +49,20 @@
   align-items: flex-end;
 }
 
-.presentationStack > span {
+.presentationStack .presentationStackPlaceholder {
   display: flex;
   align-items: center;
   opacity: 0%;
   transition: 200ms;
+  color: #fff;
 }
 
-.presentationStack:hover > span {
+.presentationStack:hover .presentationStackPlaceholder {
   opacity: 100%;
   margin-top: 1rem;
 }
 
-.presentationStack > span > img {
+.presentationStack .presentationStackPlaceholder img {
   height: 1.2rem;
   box-shadow: none;
   margin-left: 0.6rem;
@@ -122,17 +123,21 @@
   padding: 2rem;
 }
 
-.stackDetailsTitle {
-  text-align: center;
+.homepageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .stackDetailsCardsContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
-  row-gap: 2rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .stackDetailsCard {
@@ -166,9 +171,76 @@
   margin-bottom: 1rem;
 }
 
+.aboutSectionContainer {
+  background: #444444;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.contactContainer {
+  border-radius: 1rem;
+  background-color: #444444;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.contactTitle {
+  padding: 3rem 2rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #666;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contactLinks {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  padding: 2rem;
+}
+
+.contactLinks a {
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+  transition: 200ms;
+}
+
+.contactLinks a:hover {
+  background: #fff;
+  color: #121214;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+
+.contactLinks a svg {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 1500px) {
   .stackDetailsCardsContainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactContainer {
+    width: 100%;
   }
 }
 
@@ -234,5 +306,31 @@
 
   .stackDetailsCard {
     min-height: fit-content;
+  }
+
+  .homepageTitle {
+    font-size: 1.5rem;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .contactTitle {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .contactLinks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    padding: 2rem;
+  }
+
+  .contactLinks a {
+    padding: 1rem;
   }
 }
