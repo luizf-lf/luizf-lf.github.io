@@ -29,3 +29,12 @@
   width: 1.2rem;
   margin-right: 0.5rem;
 }
+
+@media screen and (max-width: 570px) {
+  .footerContentContainer {
+    justify-content: space-between;
+  }
+  .developedBy {
+    display: none;
+  }
+}

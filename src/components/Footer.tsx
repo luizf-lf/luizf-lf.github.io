@@ -11,7 +11,8 @@ function Footer() {
         <span>
           <FaCode />
           <span>
-            Developed by{' '}
+            <span className={styles.developedBy}>Developed </span>
+            by{' '}
             <strong>
               <a
                 href="https://github.com/luizf-lf"
