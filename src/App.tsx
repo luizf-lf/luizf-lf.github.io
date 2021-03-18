@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
 
 import './styles/global.css';
 import './i18n';
@@ -16,6 +17,8 @@ function App() {
           <Navbar />
           <Route exact path="/" component={Homepage}></Route>
           <Route path="/projects" component={Projects}></Route>
+
+          <Footer />
         </Router>
         {/* <DevelopmentInfo /> */}
       </Suspense>
