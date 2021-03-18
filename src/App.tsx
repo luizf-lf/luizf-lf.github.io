@@ -11,18 +11,16 @@ import { Suspense } from 'react';
 
 function App() {
   return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Router>
-          <Navbar />
-          <Route exact path="/" component={Homepage}></Route>
-          <Route path="/projects" component={Projects}></Route>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Router>
+        <Navbar />
+        <Route exact path="/" component={Homepage}></Route>
+        <Route path="/projects" component={Projects}></Route>
 
-          <Footer />
-        </Router>
-        {/* <DevelopmentInfo /> */}
-      </Suspense>
-    </>
+        <Footer />
+      </Router>
+      {/* <DevelopmentInfo /> */}
+    </Suspense>
   );
 }
 

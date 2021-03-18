@@ -21,5 +21,8 @@
       "title": "Venha me conhecer:",
       "description": "Você pode entrar em contato comigo através destas redes:"
     }
+  },
+  "projects": {
+    "favoritesTitle": "Conheça meus projetos favoritos que eu já desenvolvi:"
   }
 }
