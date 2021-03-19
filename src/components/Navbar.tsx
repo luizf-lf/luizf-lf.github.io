@@ -11,6 +11,7 @@ import closeIcon from '../assets/icons/close.svg';
 
 import styles from '../styles/components/Navbar.module.css';
 import { useTranslation } from 'react-i18next';
+import { scroller } from 'react-scroll';
 
 function Navbar() {
   const [lateralNavIsVisible, setLateralNavIsVisible] = useState(false);
@@ -24,6 +25,14 @@ function Navbar() {
     } else {
       setNavbarScrolled(false);
     }
+  };
+
+  const scrollToRoot = () => {
+    scroller.scrollTo('root', {
+      duration: 600,
+      delay: 0,
+      smooth: 'easeInOut',
+    });
   };
 
   window.addEventListener('scroll', changeNavbarBackground);
@@ -63,7 +72,10 @@ function Navbar() {
       </a>
       <Link
         to="/projects"
-        onClick={() => setLateralNavIsVisible(false)}
+        onClick={() => {
+          setLateralNavIsVisible(false);
+          scrollToRoot();
+        }}
         className={styles.navbarLinksLink}
       >
         <div>
@@ -87,7 +99,10 @@ function Navbar() {
         <Link
           to="/"
           className={styles.navbarLogo}
-          onClick={() => setLateralNavIsVisible(false)}
+          onClick={() => {
+            setLateralNavIsVisible(false);
+            scrollToRoot();
+          }}
         >
           <img src={navbarLogo} alt="luizf-lf" />
           <p>luizf-lf</p>
