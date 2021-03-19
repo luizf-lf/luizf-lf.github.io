@@ -47,11 +47,13 @@ const RepositoryCard = ({
       )}
 
       <div className={styles.repositoryInfoContainer}>
-        <div className={styles.repositoryTitle}>
-          <p>{title}</p>
-          {gitHubLink}
+        <div>
+          <div className={styles.repositoryTitle}>
+            <p>{title}</p>
+            {gitHubLink}
+          </div>
+          <div className={styles.repositoryDescription}>{description}</div>
         </div>
-        <div className={styles.repositoryDescription}>{description}</div>
         <div className={styles.repositoryLanguages}>
           {languages.map((language) => (
             <span className={styles.languageItem}>{language}</span>

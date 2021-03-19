@@ -1,10 +1,12 @@
 .projectsPageContainer {
-  padding: 5rem 20rem 0 20rem;
+  padding: 5rem 2rem 2rem 2rem;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .favoritesContainer {
-  border: 1px solid red;
+  max-width: 1200px;
 }
 
 .favoritesContainer > p {
@@ -14,7 +16,21 @@
 }
 
 .favoritesCardsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  transition: 200ms;
+}
+
+@media screen and (max-width: 1100px) {
+  .favoritesCardsContainer {
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .favoritesCardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
 }
