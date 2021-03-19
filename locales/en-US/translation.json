@@ -21,5 +21,8 @@
       "title": "Come and meet me:",
       "description": "You can contact me through these networks:"
     }
+  },
+  "projects": {
+    "favoritesTitle": "Learn about my favorite projects that I have already developed:"
   }
 }
