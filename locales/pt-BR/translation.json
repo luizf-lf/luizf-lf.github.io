@@ -23,6 +23,7 @@
     }
   },
   "projects": {
-    "favoritesTitle": "Conheça meus projetos favoritos que eu já desenvolvi:"
+    "favoritesTitle": "Conheça meus projetos favoritos que eu já desenvolvi:",
+    "othersTitle": "Confira outros de meus repositórios no GitHub:"
   }
 }
