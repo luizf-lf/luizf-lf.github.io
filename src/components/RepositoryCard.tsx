@@ -11,7 +11,8 @@ interface repositoryCardProps {
   repository?: string;
   repositoryIsPrivate: boolean;
   description: string;
-  languages: string[];
+  languages?: string[];
+  language?: string;
 }
 
 const RepositoryCard = ({
@@ -21,11 +22,12 @@ const RepositoryCard = ({
   repositoryIsPrivate,
   description,
   languages,
+  language,
 }: repositoryCardProps) => {
   let gitHubLink;
 
   if (repositoryIsPrivate) {
-    gitHubLink = <RiLockLine fill="#fff3d1" />;
+    gitHubLink = <RiLockLine fill="#c6c6c6" />;
   } else {
     if (repository === '') {
       gitHubLink = <div></div>;
@@ -55,9 +57,13 @@ const RepositoryCard = ({
           <div className={styles.repositoryDescription}>{description}</div>
         </div>
         <div className={styles.repositoryLanguages}>
-          {languages.map((language) => (
-            <span className={styles.languageItem}>{language}</span>
-          ))}
+          {languages &&
+            languages.map((languageItem) => (
+              <span className={styles.languageItem} key={language}>
+                {languageItem}
+              </span>
+            ))}
+          {language && <span className={styles.languageItem}>{language}</span>}
         </div>
       </div>
     </div>
