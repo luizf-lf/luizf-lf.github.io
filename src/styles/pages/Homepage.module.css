@@ -81,7 +81,10 @@
   height: 3.5rem;
   margin-left: -1rem;
   box-shadow: -6px 0px 15px 0px rgba(0, 0, 0, 0.3);
-  transition: 200ms;
+  transition: 300ms;
+  animation-name: stackExpand;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
 
 .footerButton {
@@ -232,6 +235,24 @@
 .contactLinks a svg {
   font-size: 1.6rem;
   margin-right: 0.5rem;
+}
+
+@keyframes stackExpand {
+  0% {
+    margin-left: -1rem;
+  }
+
+  15% {
+    margin-left: 0.5rem;
+  }
+
+  85% {
+    margin-left: 0.5rem;
+  }
+
+  100% {
+    margin-left: -1rem;
+  }
 }
 
 @media screen and (max-width: 1500px) {
