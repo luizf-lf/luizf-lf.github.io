@@ -11,7 +11,13 @@ import moveItSc from '../assets/images/moveIt-720.png';
 
 function Projects() {
   const { t } = useTranslation();
-  const [repositories, setRepositories] = useState([<Loader key="Loader" />]);
+  const [repositories, setRepositories] = useState([
+    <>
+      <div></div>
+      <Loader key="Loader" />
+      <div></div>
+    </>,
+  ]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/luizf-lf/repos', { method: 'GET' })
