@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import RepositoryCard from '../components/RepositoryCard';
+import Loader from '../components/Loader';
 
 import styles from '../styles/pages/Projects.module.css';
 
@@ -10,9 +11,7 @@ import moveItSc from '../assets/images/moveIt-720.png';
 
 function Projects() {
   const { t } = useTranslation();
-  const [repositories, setRepositories] = useState([
-    <p key="loading">Loading...</p>,
-  ]);
+  const [repositories, setRepositories] = useState([<Loader key="Loader" />]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/luizf-lf/repos', { method: 'GET' })
