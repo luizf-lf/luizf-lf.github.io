@@ -237,6 +237,17 @@
   margin-right: 0.5rem;
 }
 
+.scrollIndicatorContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  animation: itemFloat;
+  opacity: 75%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 @keyframes stackExpand {
   0% {
     margin-left: -1rem;
@@ -252,6 +263,16 @@
 
   100% {
     margin-left: -1rem;
+  }
+}
+
+@keyframes itemFloat {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(-1rem);
   }
 }
 

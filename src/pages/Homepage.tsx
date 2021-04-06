@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  FaChevronDown,
   FaDatabase,
   FaDiscord,
   FaGithub,
@@ -108,6 +109,9 @@ function Homepage() {
           <img src={mailIcon} alt="Mail" className={styles.footerButtonImg} />
           {t('homepage.hero.contactButton')}
         </button>
+        <div className={styles.scrollIndicatorContainer}>
+          <FaChevronDown />
+        </div>
       </div>
       <div className={`${styles.stackDetailsContainer} skillsContainerTarget`}>
         <div className={styles.homepageTitle}>{t('homepage.stack.title')}</div>
