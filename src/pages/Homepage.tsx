@@ -48,6 +48,7 @@ import simpleDockerIcon from '../assets/icons/simple/docker-simple.svg';
 // import downIcon from '../assets/icons/down.svg';
 import StackItem from '../components/StackItem';
 import { useTranslation } from 'react-i18next';
+import AboutMe from '../components/AboutMe';
 
 function Homepage() {
   const { t } = useTranslation();
@@ -94,10 +95,6 @@ function Homepage() {
                 <img src={javascriptStackIcon} alt="Javascript" />
                 <img src={typescriptStackIcon} alt="Typescript" />
               </div>
-              {/* <span className={styles.presentationStackPlaceholder}>
-                Conheça a minha stack
-                <img src={downIcon} alt="Down" />
-              </span> */}
             </div>
           </div>
         </div>
@@ -113,8 +110,12 @@ function Homepage() {
           <FaChevronDown />
         </div>
       </div>
-      <div className={`${styles.stackDetailsContainer} skillsContainerTarget`}>
-        <div className={styles.homepageTitle}>{t('homepage.stack.title')}</div>
+      <div className={styles.stackDetailsContainer}>
+        <div className={styles.homepageTitle}>{t('homepage.about.title')}</div>
+        <AboutMe />
+        <div className={`${styles.homepageTitle} skillsContainerTarget`}>
+          {t('homepage.stack.title')}
+        </div>
         <div className={styles.stackDetailsCardsContainer}>
           <div className={styles.stackDetailsCard}>
             <div className={styles.detailsCardTitle}>
