@@ -20,6 +20,12 @@
     "contact": {
       "title": "Come and meet me:",
       "description": "You can contact me through these networks:"
+    },
+    "about": {
+      "title": "A little about me:",
+      "graduation": "Graduated in Information Systems",
+      "experience": "4+ years of programing experience",
+      "next": "Always looking for the next level"
     }
   },
   "projects": {

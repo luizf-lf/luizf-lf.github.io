@@ -20,6 +20,12 @@
     "contact": {
       "title": "Venha me conhecer:",
       "description": "Você pode entrar em contato comigo através destas redes:"
+    },
+    "about": {
+      "title": "Sobre mim:",
+      "graduation": "Graduado em Sistemas De Informação",
+      "experience": "4+ anos de experiencia em programação",
+      "next": "Sempre à procura do próximo nível"
     }
   },
   "projects": {
