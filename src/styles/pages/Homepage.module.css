@@ -242,7 +242,6 @@
   left: 50%;
   bottom: 2rem;
   animation: itemFloat;
-  opacity: 75%;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
