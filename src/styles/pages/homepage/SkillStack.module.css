@@ -1,0 +1,7 @@
+.skillsStackContainer {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
