@@ -89,8 +89,8 @@ function Homepage() {
           {t('homepage.stack.title')}
         </div>
         <SkillStack />
+        <ContactCard />
       </div>
-      <ContactCard />
     </>
   );
 }

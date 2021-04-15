@@ -1,12 +1,16 @@
 .itemContainer {
   display: flex;
   flex-direction: row;
+  justify-self: center;
 }
 
 .itemContainer .iconContainer {
   padding: 1rem;
   border-radius: 1rem 0 0 1rem;
   background: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .itemContainer .iconContainer img {
@@ -20,6 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: fit-content;
 }
 
 .itemContainer .detailsContainer .titleContainer {
