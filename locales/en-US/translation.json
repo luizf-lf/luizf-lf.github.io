@@ -2,9 +2,6 @@
   "navbar": {
     "projects": "Projects"
   },
-  "stackItem": {
-    "level": "Level"
-  },
   "homepage": {
     "hero": {
       "catchPhrase1": "Developing a new world.",
