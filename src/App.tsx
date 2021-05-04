@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import DevelopmentInfo from './components/DevelopmentInfo';
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import Projects from './pages/Projects';
@@ -17,10 +16,8 @@ function App() {
         <Navbar />
         <Route exact path="/" component={Homepage} />
         <Route path="/projects" component={Projects} />
-
         <Footer />
       </Router>
-      {/* <DevelopmentInfo /> */}
     </Suspense>
   );
 }
