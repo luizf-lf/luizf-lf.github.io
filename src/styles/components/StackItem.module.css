@@ -1,0 +1,52 @@
+.stackItemContainer {
+  background: #666;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.stackIcon {
+  background: #555;
+  border-radius: 1rem 0rem 0 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.stackIcon img {
+  height: 3rem;
+}
+
+.stackContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.stackContent p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  margin-bottom: 0.3rem;
+}
+
+.stackName {
+  font-size: 1.5rem;
+}
+
+.stackLevelTitle {
+  font-weight: regular;
+  font-size: 0.8rem;
+}
+
+.stackProgressBar {
+  width: 100%;
+  background: #444;
+  height: 0.3rem;
+  border-radius: 1rem;
+}
+
+.stackActualProgress {
+  height: 100%;
+  border-radius: 1rem;
+}

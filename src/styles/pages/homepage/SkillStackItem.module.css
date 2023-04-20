@@ -1,0 +1,51 @@
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.itemContainer .iconContainer {
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+  background: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemContainer .iconContainer img {
+  height: 3rem;
+}
+
+.itemContainer .detailsContainer {
+  padding: 1rem;
+  background: #666666;
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.itemContainer .detailsContainer .titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.itemContainer .detailsContainer .titleContainer span {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.itemContainer .detailsContainer .levelContainer {
+  display: flex;
+}
+.itemContainer .detailsContainer .levelContainer > div {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  background: #444444;
+}

@@ -1,0 +1,37 @@
+.projectsPageContainer {
+  padding: 5rem 2rem 2rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  max-width: 1200px;
+}
+
+.contentContainer > p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.repositoriesCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+  transition: 200ms;
+}
+
+@media screen and (max-width: 1100px) {
+  .repositoriesCardsContainer {
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .repositoriesCardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}

@@ -1,0 +1,52 @@
+.repositoryCardContainer {
+  background: #444;
+  border-radius: 1rem;
+  width: 100%;
+
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.imageContainer img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: contain;
+}
+
+.repositoryInfoContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 12rem;
+}
+
+.repositoryTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.repositoryTitle p {
+  font-size: 1.5rem;
+}
+
+.repositoryTitle svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.repositoryDescription {
+  color: #c9c9c9;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.repositoryLanguages .languageItem {
+  border: 1px solid #fff;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}

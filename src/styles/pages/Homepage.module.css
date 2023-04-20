@@ -1,0 +1,242 @@
+.homepageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(107.56deg, #444444 0%, #121214 64.06%);
+  height: 100vh;
+  padding: 2rem;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.presentationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentationText {
+  font-size: 4rem;
+  width: 45%;
+  transition: 200ms;
+}
+
+.presentationAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 200ms;
+}
+
+.presentationAbout h1 {
+  font-size: 4rem;
+  transition: 200ms;
+}
+
+.presentationAbout p {
+  font-size: 2rem;
+  transition: 200ms;
+}
+
+.presentationStack {
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 200ms;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.presentationStack .presentationStackPlaceholder {
+  display: flex;
+  align-items: center;
+  opacity: 0%;
+  transition: 200ms;
+  color: #fff;
+}
+
+.presentationStack:hover .presentationStackPlaceholder {
+  opacity: 100%;
+  margin-top: 1rem;
+}
+
+.presentationStack .presentationStackPlaceholder img {
+  height: 1.2rem;
+  box-shadow: none;
+  margin-left: 0.6rem;
+}
+
+.presentationStack:hover {
+  border: 2px solid #444444;
+  padding: 1rem;
+}
+
+.presentationStack:hover > .stackIconsContainer img {
+  margin-left: 0.5rem;
+}
+
+.presentationStack img {
+  height: 3.5rem;
+  margin-left: -1rem;
+  box-shadow: -6px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  transition: 300ms;
+  animation-name: stackExpand;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+.footerButton {
+  width: 15rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  font-family: Poppins, 'sans-serif';
+  font-weight: medium;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  transition: 200ms;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerButtonImg {
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: 200ms;
+}
+
+.footerButton:hover {
+  background: #fff;
+  color: #444444;
+  width: 18rem;
+
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+
+.footerButton:hover .footerButtonImg {
+  filter: invert(0.8);
+}
+
+.stackDetailsContainer {
+  padding: 2rem;
+}
+
+.homepageTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.aboutSectionContainer {
+  background: #444444;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.scrollIndicatorContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  animation: itemFloat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes stackExpand {
+  0% {
+    margin-left: -1rem;
+  }
+
+  15% {
+    margin-left: 0.5rem;
+  }
+
+  85% {
+    margin-left: 0.5rem;
+  }
+
+  100% {
+    margin-left: -1rem;
+  }
+}
+
+@keyframes itemFloat {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .presentationText {
+    font-size: 3rem;
+  }
+
+  .presentationAbout h1 {
+    font-size: 3rem;
+  }
+
+  .presentationAbout p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .presentationContainer {
+    flex-direction: column;
+  }
+
+  .presentationText {
+    margin-top: -4rem;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .presentationAbout {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .presentationAbout h1 {
+    font-size: 2rem;
+  }
+
+  .presentationAbout p {
+    font-size: 1rem;
+  }
+
+  .presentationStack img {
+    height: 2.5rem;
+  }
+
+  .footerButton {
+    font-size: 1rem;
+    width: fit-content;
+    margin-bottom: 4rem;
+  }
+
+  .footerButton:hover {
+    width: fit-content;
+  }
+
+  .presentationStack:hover > .stackIconsContainer img {
+    margin-left: -0.5rem;
+  }
+
+  .homepageTitle {
+    font-size: 1.5rem;
+  }
+}
