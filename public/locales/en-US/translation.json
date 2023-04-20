@@ -1,0 +1,32 @@
+{
+  "navbar": {
+    "projects": "Projects"
+  },
+  "homepage": {
+    "hero": {
+      "catchPhrase1": "Developing a new world.",
+      "catchPhrase2": "One line of code at a time.",
+      "location": "Minas Gerais, Brazil",
+      "contactButton": "Contact me"
+    },
+    "stack": {
+      "title": "Learn about the stack I'm currently working with:",
+      "database": "Databases",
+      "tools": "Tools and Frameworks"
+    },
+    "contact": {
+      "title": "Come and meet me:",
+      "description": "You can contact me through these networks:"
+    },
+    "about": {
+      "title": "A little about me:",
+      "graduation": "Graduated in Information Systems",
+      "experience": "4+ years of programing experience",
+      "next": "Always looking for the next level"
+    }
+  },
+  "projects": {
+    "favoritesTitle": "Learn about my favorite projects that I have already developed:",
+    "othersTitle": "Check out other of my repositories on GitHub:"
+  }
+}
