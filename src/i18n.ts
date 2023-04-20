@@ -13,7 +13,7 @@ i18n
     debug: false,
     detection: {
       order: ['navigator', 'querystring', 'cookie'],
-      cache: ['cookie'],
+      caches: ['cookie'],
     },
     interpolation: {
       escapeValue: false,
