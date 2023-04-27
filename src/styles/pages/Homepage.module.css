@@ -43,7 +43,6 @@
   margin-top: 1rem;
   padding: 1rem 0;
   border-radius: 1rem;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -73,7 +72,7 @@
   padding: 1rem;
 }
 
-.presentationStack:hover > .stackIconsContainer img {
+.presentationStack:hover>.stackIconsContainer img {
   margin-left: 0.5rem;
 }
 
@@ -232,7 +231,7 @@
     width: fit-content;
   }
 
-  .presentationStack:hover > .stackIconsContainer img {
+  .presentationStack:hover>.stackIconsContainer img {
     margin-left: -0.5rem;
   }
 

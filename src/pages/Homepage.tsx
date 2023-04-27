@@ -28,7 +28,7 @@ function Homepage() {
             <p>{t('homepage.hero.catchPhrase2')}</p>
           </div>
           <div className={styles.presentationAbout}>
-            <h1>Luiz Fernando</h1>
+            <h1>Luiz Ferreira</h1>
             <p>Full Stack Web Developer</p>
             <p>{t('homepage.hero.location')}</p>
             <div className={styles.presentationStack}>
@@ -46,10 +46,10 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <button type="button" className={styles.footerButton}>
+        <a href="mailto:luizfernando_lf@hotmail.com.br" className={styles.footerButton}>
           <img src={mailIcon} alt="Mail" className={styles.footerButtonImg} />
           {t('homepage.hero.contactButton')}
-        </button>
+        </a>
       </div>
     </>
   );

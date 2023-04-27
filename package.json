@@ -5,7 +5,7 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
