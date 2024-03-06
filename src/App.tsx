@@ -1,4 +1,4 @@
-import LayoutContainer from './v1/LayoutContainer';
+import LayoutContainer from './v1.2/LayoutContainer';
 
 function App() {
   return <LayoutContainer />;
