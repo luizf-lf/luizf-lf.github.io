@@ -2,6 +2,10 @@ import gsap from 'gsap';
 import React, { useLayoutEffect, useRef } from 'react';
 import themes from '../../utils/themes';
 
+const styles = {
+  container: { backgroundColor: themes.default.primary, height: '100vh' },
+};
+
 function HeroSection() {
   const comp = useRef(null);
 
@@ -17,7 +21,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <section ref={comp} style={{ backgroundColor: themes.default.primary }}>
+    <section ref={comp} style={styles.container}>
       Hero Section
     </section>
   );
