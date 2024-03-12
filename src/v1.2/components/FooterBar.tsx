@@ -1,6 +1,6 @@
 import themes from '../utils/themes';
 
-function ColorBar() {
+function FooterBar() {
   return (
     <div
       style={{
@@ -14,4 +14,4 @@ function ColorBar() {
   );
 }
 
-export default ColorBar;
+export default FooterBar;

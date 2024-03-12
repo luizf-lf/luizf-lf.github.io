@@ -1,11 +1,10 @@
 import gsap from 'gsap';
 import React, { useLayoutEffect, useRef } from 'react';
 import themes from '../../utils/themes';
-import ColorBar from '../../components/ColorBar';
+import FooterBar from '../../components/FooterBar';
 
 const styles = {
   container: {
-    backgroundColor: themes.default.primary,
     height: '100vh',
   },
   title: {
@@ -46,10 +45,18 @@ function HeroSection() {
     <section ref={comp} style={styles.container}>
       <h1 style={styles.title}>Desenvolvendo um novo mundo.</h1>
       <h2 style={styles.subtitle}>Uma linha de código por vez.</h2>
+      <h3
+        style={{
+          color: themes.default.secondary,
+          fontFamily: 'Inter',
+        }}
+      >
+        Luiz Ferreira • Full Stack Developer
+      </h3>
 
       <button style={styles.callToActionButton}>Entre em contato</button>
 
-      <ColorBar />
+      <FooterBar />
     </section>
   );
 }
