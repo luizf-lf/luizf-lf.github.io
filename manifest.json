@@ -1,6 +1,6 @@
 {
   "short_name": "luizf-lf",
-  "name": "luizf-lf - Portfolio",
+  "name": "Luiz Ferreira - Portfolio",
   "icons": [
     {
       "src": "./resources/favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#444444"
+  "theme_color": "#E0E0E0",
+  "background_color": "#29252D"
 }
